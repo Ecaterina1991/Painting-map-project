@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="/icon2.png" />
+
+   
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
+
+    <!-- <script defer src="other.js"></script> -->
+    <script defer src="script.js"></script>
+
+    <title>Painting map</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <img src="logo2.png" alt="Logo" class="logo" />
+      <div class="mytitle">
+        <h2>The most beautiful places to paint in my city</h2>
+      </div>
+
+      <div class="nature">
+        <img
+          src="nature.jpg"
+          alt="a woman is painting in nature"
+          width="50%"
+          height="auto"
+        />
+      </div>
+
+      <div class="mytitle">
+        <p>Just choose the place, go there and paint it!</p>
+      </div>
+
+      <ul class="paintings">
+        <form class="form hidden">
+          <div class="form__row">
+            <label class="form__label">Type</label>
+            <select class="form__input form__input--type">
+              <option value="painting">Painting</option>
+            </select>
+          </div>
+        </ul>
+          
+
+      <p class="copyright">
+        &copy; Copyright by
+        <a
+          class="twitter-link"
+          target="_blank"
+          href="https://twitter.com/Stefa1Ecaterina"
+          >Ecaterina Ștefan</a
+        >
+      </p>
+    </div>
+
+    <div id="map"></div>
+  </body>
+</html>
